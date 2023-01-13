@@ -23,4 +23,12 @@ public class UserRegistrationTest
         boolean check = userRegistration.checkLastNameIsCorrect(lastName);
         Assert.assertTrue(check);
     }
+
+    @Test
+    public void eMAil()
+    {
+        String eMail = "janani@bl.co";
+        boolean check = userRegistration.checkEmailIsCorrect(eMail);
+        Assert.assertTrue(check);
+    }
 }
