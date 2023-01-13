@@ -41,14 +41,20 @@ public class UserRegistrationTest
     @Test
     public void passWordRule1()
     {
-        String mobileNumber = "gVishvas";
-        boolean check = userRegistration.checkPassWordRule1IsCorrect(mobileNumber);
+        String rull1 = "gVishvas";
+        boolean check = userRegistration.checkPassWordRule1IsCorrect(rull1);
         Assert.assertTrue(check);
     }
     @Test
     public void passWordRule2(){
-        String mobileNumber = "Gvishvas";
-        boolean check = userRegistration.checkPassWordRule2IsCorrect(mobileNumber);
+        String rull2 = "Gvishvas";
+        boolean check = userRegistration.checkPassWordRule2IsCorrect(rull2);
+        Assert.assertTrue(check);
+    }
+    @Test
+    public void passWordRule3(){
+        String rull3 = "Gvishvas1";
+        boolean check = userRegistration.checkPassWordRule3IsCorrect(rull3);
         Assert.assertTrue(check);
     }
 }
