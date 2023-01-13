@@ -31,4 +31,11 @@ public class UserRegistrationTest
         boolean check = userRegistration.checkEmailIsCorrect(eMail);
         Assert.assertTrue(check);
     }
+    @Test
+    public void mobileNumber()
+    {
+        String mobileNumber = "91 7359231256";
+        boolean check = userRegistration.checkMobileNumberFormatIsCorrect(mobileNumber);
+        Assert.assertTrue(check);
+    }
 }
